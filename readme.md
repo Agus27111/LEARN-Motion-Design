@@ -24,6 +24,7 @@
 
         *Good application is like ... *
             transition: backround-color 0.4s ease-in-out, color 0.4s ease-out;
+
     2. Exercise 4
         We leaern to transition a Navbar with drop menu
             1. Firstly we need to add transition to All children element at navbar with
@@ -66,3 +67,34 @@
                     transition-property: opacity;
                 }
                 /* End of children element from drop down menu */
+    3. exercises 5 and 6
+        > not all CSS properties support transition like for ex background.
+        > not all transition need the same duration
+        > Transition are not limited to hover states, for examplle they can be triggered when an element receive a certain class. (like exercise 6)
+
+# exercises CSS animation
+
+    * first we need to define the keyframes (describing step by step)
+    Normal syntax
+        @keyframe animationName {
+            from {
+                ....
+            }
+            to {
+                ....
+            }
+        }
+
+    Short Syntax
+    .box {
+        animation: duration | easing-function |
+            delay | iteration-count | direction |
+            fill-mode | play-state | name;
+    }
+
+    example
+    . box {
+        animation: 2s ease-in-out 1s 2 moveRight;
+    }
+
+    * second we can apply the animation what we want

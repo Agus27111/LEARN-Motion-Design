@@ -98,3 +98,22 @@
     }
 
     * second we can apply the animation what we want
+    alternate as the direction causes animation between forward and reverse.
+
+
+    // LOADING ANIMATION
+     ^^ Loading Animation  (CSS spinner)
+     --> Spinkit by Tobias Ahlin
+     --> Lottie FIles animation
+
+    1. exercise 8
+    learn loading animation
+
+    2. Exercise 9
+    learn loading animation with SVG text
+
+    3. exercise 10
+    learn loading animation in button
+
+    4. exercises 11
+    add lotti files animation to project with just copyy the embed.

@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=vqXLGX0szIQ&t=18319s
+
 # Exercise Videos (exercise 1 & 2)
 
     1. we can add video from youtube with embed
@@ -117,3 +119,81 @@
 
     4. exercises 11
     add lotti files animation to project with just copyy the embed.
+
+    5. exercises 12-14
+    i cant follow because i dont have a SVG file.
+
+    in this steps the lecture animation the SVG and thats awesome!
+
+    6. Exercises 15
+    play with GSAP
+    still dont have a SVG huhu...
+
+    7.exercise 16
+    typewriter with GSAP
+        add CDN GSAP
+        $create script for the typewriter
+        //main timeline with GSAP
+            let mainTimeline = gsap.timeline({
+                repeat: -1,
+                 });
+
+        //for each word, create a new timeline, use the Text plugin then append that timeline to the main one to make typewriter
+
+            words.forEach((word) => {
+                let textTimeline = gsap.timeline({
+                repeat: 1,
+                yoyo: true,
+                repeatDelay: 4,
+                });
+                textTimeline.to("#typewriter", {
+                text: word,
+                duration: 1,
+                onUpdate: () => {
+                    cursorTimeline.restart();
+                    cursorTimeline.pause();
+                },
+                onComplete: () => {
+                    cursorTimeline.play();
+                },
+                });
+                mainTimeline.add(textTimeline);
+            });
+
+        $Create blinking cursor
+        //make blinking cursor
+            let cursorTimeline = gsap.timeline({
+                repeat: -1,
+                repeatDelay: 0.8,
+                });
+
+            cursorTimeline.to("#cursor", {
+                opacity: 1,
+                duration: 0,
+            }).to("#cursor", {
+                opacity: 0,
+                duration: 0,
+                delay: 0.8,
+            });
+
+        $ Create drop icon bouncing with CSS
+            #our-work svg {
+                animation: 5s ease-in-out infinite point-down;
+            }
+
+            @keyframes point-down {
+                0%,
+                10%,
+                40%,
+                100% {
+                transform: translate3d(0, 0, 0);
+                }
+                25% {
+                transform: translate3d(0, 1rem, 0);
+                }
+            }
+            to make perfect we can take a look at cubic-bezier.com to replace ease-in with cubic-bezier(1,.06,.24,1.32)
+
+
+    8.exercise 17
+    Magneto button when hover

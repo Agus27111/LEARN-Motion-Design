@@ -197,3 +197,13 @@ https://www.youtube.com/watch?v=vqXLGX0szIQ&t=18319s
 
     8.exercise 17
     Magneto button when hover
+
+    9. exercise 18
+    scrollong animation
+        1. CSS scroll-timeline
+        2. Intersection Observer
+    we create with GSAP and lenis
+
+    10. exercises 19
+    i dont have the SVG
+    paralax have some SVG pieces to make it works
